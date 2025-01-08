@@ -1,0 +1,168 @@
+<h1 id="computer-networks-a-systems-approach">Computer Networks: A
+    Systems Approach</h1>
+    <ul>
+    <li><a href="#foundations">Chapter 1 - Foundations</a>
+    <ul>
+    <li><a href="#foundations---introduction">Foundations -
+    Introduction</a></li>
+    <li><a href="#foundations---applications">Foundation -
+    Applications</a></li>
+    <li><a href="#foundations---requirements">Foundations - Requirements</a>
+    ## Foundations</li>
+    </ul></li>
+    </ul>
+    <h3 id="foundations---introduction">Foundations - Introduction</h3>
+    <ul>
+    <li>The goal of the book is to answer how to build a computer network to
+    grow and support diverse number of applications.</li>
+    </ul>
+    <p><strong>What is a computer network</strong></p>
+    <ul>
+    <li>At one time, network meant the set of serial lines used to attach
+    dumb terminals to mainframe computers.
+    <ul>
+    <li>There are other types of networks, like voice telephone networks and
+    cable TV networks to disseminate video signals.
+    <ul>
+    <li>All of these have one thing in common: They’re specialized to handle
+    one particular kind of data, and they connect to special purpose
+    devices.</li>
+    </ul></li>
+    </ul></li>
+    <li>The most important aspect of a computer network is it’s generality.
+    <ul>
+    <li>They’re built from general purpose programable hardware, and they’re
+    not optimized for particular applications.</li>
+    </ul></li>
+    </ul>
+    <h2 id="foundations---applications">Foundations - Applications</h2>
+    <p><strong>applications of networks</strong></p>
+    <ul>
+    <li>We use the internet through it’s applications: World Wide Web,
+    email, etc.
+    <ul>
+    <li>We are the Users of the network.</li>
+    </ul></li>
+    <li>There are the people that <strong>create</strong> the
+    applications</li>
+    <li>The people that operate/manage networks. It’s a behind the scenes
+    job, but it’s critical and complex.</li>
+    <li>Finally, there are the people that design and build the devices and
+    protocols that make up the internet.</li>
+    </ul>
+    <p><strong>Classes of Applications</strong></p>
+    <ul>
+    <li><p>The World Wide Web is not the internet, but an internet
+    application.</p></li>
+    <li><p>The web is a simple interface:</p>
+    <ul>
+    <li>The user view pages full of textual and graphical objects, and click
+    on objects they want to learn about. Pressing it will take you to a new
+    page.</li>
+    <li>Each object is bounded to an identifier for the next page or oject
+    to be used. This is known as a <strong>Uniform Resource Locator
+    (URL)</strong>.
+    <ul>
+    <li>This is how the web identifies all objects that can be viewed.</li>
+    </ul></li>
+    </ul></li>
+    </ul>
+    <pre><code>http://www.cs.princeton.edu/llp/index.html</code></pre>
+    <p><strong>what’s happening with the url?</strong></p>
+    <ul>
+    <li>HTTP stands for Hypertext Trainsfer Protocol. This explains how to
+    download the page.</li>
+    <li>The webpage is served by a machine named www.cs.princeton.edu. the
+    location of the home page for larry is <code>/llp/index.html</code></li>
+    </ul>
+    <p><strong>behind the scenes</strong></p>
+    <ul>
+    <li>In reality, clicking the URL is a little more complicated. Dozens of
+    messages can be exchanged over the internet.
+    <ul>
+    <li>up to 6 messages to translate the server name to it’s ip
+    address.</li>
+    <li>3 messages to set up a TCP (Transmission Control Protocol)
+    connection between the browser and the server.</li>
+    <li>4 messages to send the HTTP “get” request and the server responds
+    with the requested pages</li>
+    <li>Finally, 4 messages to tear up the TCP connection.</li>
+    </ul></li>
+    </ul>
+    <p><strong>streaming</strong></p>
+    <ul>
+    <li>Unlike the previous example, we cannot download an entire video and
+    watch it. We need to, in a timely manner, transfer messages from the
+    sender to receiver.</li>
+    </ul>
+    <h2 id="foundations---requirements">Foundations - Requirements</h2>
+    <ul>
+    <li>The goals of a computer network depends on the person: user,
+    application developer, network operator and network designers have
+    different goals and requirements.</li>
+    </ul>
+    <p><strong>scalable connectivity</strong></p>
+    <ul>
+    <li><p>A computer network should provide connectivity among a set of
+    computers.</p>
+    <ul>
+    <li>Sometimes, having a small network is enough, like privite corporate
+    machines limit the number of machines connected.</li>
+    </ul></li>
+    <li><p>For bigger networks, like the internet, we want to be able to
+    grow in such a way that all computers in the world can connect.</p></li>
+    <li><p>Scale is the ability for a system to support growth to an
+    arbitrary size.</p></li>
+    <li><p>There are many ways computers are connected to a network:</p>
+    <ul>
+    <li>At the lowest level, we can connect two computers wit ha physical
+    medium.
+    <ul>
+    <li>A physical medium is known as a link, and the computers as a
+    node.</li>
+    </ul></li>
+    </ul></li>
+    </ul>
+    <figure>
+    <img src="./networks/figure12.png"
+    alt="Figure 1.2: Direct links: (a) point-to-point (b) multiple access." />
+    <figcaption aria-hidden="true">Figure 1.2: Direct links: (a)
+    point-to-point (b) multiple access.</figcaption>
+    </figure>
+    <ul>
+    <li><p>With point to point connections, physical links are limited to a
+    pair of nodes,</p></li>
+    <li><p>With shared connections, links are not limited to a pair of
+    nodes.</p></li>
+    <li><p>Wireless Links, like Wi-Fi, are important.</p></li>
+    <li><p>Multiple access links are limited in size, in terms of how much
+    they can connect.</p></li>
+    <li><p>If we were to link all computers physically, it’d be very
+    expensive, and impossible.</p>
+    <ul>
+    <li>Connectivity between two nodes doesn’t necessarily mean a physical
+    connection between them, instead being many communicating nodes.</li>
+    </ul></li>
+    </ul>
+    <figure>
+    <img src="./networks/switchednetwork.png" alt="Figure 1.3: Switched network." />
+    <figcaption aria-hidden="true">Figure 1.3: Switched
+    network.</figcaption>
+    </figure>
+    <ul>
+    <li>Pictured is an example of a switched network. It’s more systematic
+    than just connecting them all together.</li>
+    <li>There are many types of switched networks. The two most common are:
+    <ul>
+    <li>Circuit switched: typically used from telephone systems.
+    <ul>
+    <li>It is making a comeback in optical networking.</li>
+    </ul></li>
+    <li>Packet switched: Used for most computer networks.
+    <ul>
+    <li>The nodes in the network sends discrete blocks to data to each
+    other.</li>
+    </ul></li>
+    </ul></li>
+    </ul>
+    
