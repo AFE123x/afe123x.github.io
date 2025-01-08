@@ -1,37 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>AFE123x - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>AFE123x Blog</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #003b4d;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sidebar .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .sidebar .profile .portrait {
+            width: 100px;
+            height: 100px;
+            background-color: #cce0ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            margin: 0 auto;
+        }
+
+        .sidebar .profile .name {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sidebar .profile .description {
+            font-size: 14px;
+        }
+
+        .sidebar .nav {
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .sidebar .nav li {
+            margin: 10px 0;
+        }
+
+        .sidebar .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .content {
+            width: 80%;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .content .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .content .text {
+            font-size: 16px;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>AFE123x</h1>
-        <li>
-            <ul><a href="./index.html">Home</a></ul>
-            <ul><a href="./pages/CS.html">Computer Science</a></ul>
-            <ul><a>Books</a></ul>
-            <ul><a>Music</a></ul>
-        </li>
-    </header>
-
-    <section id="about" style="display: flex;">
-        <section id="links">
-            <h1>Arun Felix</h1>
-            <a href="https://github.com/AFE123x">github</a>
-            <a href="https://www.linkedin.com/in/arun-felix-389b03231/">linkedin</a>
-        </section>
-        <img src="./images/portrait.png">
-    </section>
-    <h1 style="text-align: center;">Hello,</h1>
-    <a>Welcome to my page. I'm a fourth year Computer Science and Music student. My interests are in robotics. Hopefully you find something interesting here.</a>
-
-
+    <div class="sidebar">
+        <div class="profile">
+            <img class="portrait" src="./images/portrait.png">
+            <div class="name">AFE123x</div>
+            <div class="description">4th year CS + Music major</div>
+        </div>
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/CS.html">Computer Science</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Misc.</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="header">AFE123x</div>
+        <div class="text">Hello, welcome to my personal page. You can find many things here, like my projects, and personal yap sessions. Enjoy!</div>
+        
+    </div>
 </body>
-
 </html>
