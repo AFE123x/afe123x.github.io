@@ -3,106 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFE123x Blog</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            height: 100vh;
-        }
-
-        .sidebar {
-            width: 20%;
-            background-color: #003b4d;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .sidebar .profile {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .sidebar .profile .portrait {
-            width: 100px;
-            height: 100px;
-            background-color: #cce0ff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            font-weight: bold;
-            color: black;
-            margin: 0 auto;
-        }
-
-        .sidebar .profile .name {
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .sidebar .profile .description {
-            font-size: 14px;
-        }
-
-        .sidebar .nav {
-            width: 100%;
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        .sidebar .nav li {
-            margin: 10px 0;
-        }
-
-        .sidebar .nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .content {
-            width: 80%;
-            background-color: #e0e0e0;
-            padding: 20px;
-        }
-
-        .content .header {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .content .text {
-            font-size: 16px;
-        }
-    </style>
+    <title>Arun Felix - Home</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="profile">
-            <img class="portrait" src="./images/portrait.png">
-            <div class="name">AFE123x</div>
-            <div class="description">4th year CS + Music major</div>
+    <div id="cover">
+        <div class="data">
+            <div class="me">
+                <img src="./images/portrait.png" alt="portrait">
+                <h3> Arun Felix</h3>
+                <h4>4th year Computer Science + Music major</h4>
+            </div>
+
+            <ul>
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./pages/cs.html"><li>CS</li></a>
+                <li>Misc.</li>
+            </ul>
         </div>
-        <ul class="nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/CS.html">Computer Science</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Misc.</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <div class="header">AFE123x</div>
-        <div class="text">Hello, welcome to my personal page. You can find many things here, like my projects, and personal yap sessions. Enjoy!</div>
-        
+        <div class="content">
+            <h1>Arun Felix</h1>
+
+            <p>Hello, you've found my blog page! I'm a fourth year Computer Science and Music double major. It's certainly a weird combination, but it exists. I just made this page to learn about web development, but I also wanted it to be a useful resource. My interests are in lower level things, like embedded, operating systems, things like that. Web Development isn't my cup of Tea, but we live in a society (I need to put a roof over my head too).</p>
+
+            <h2>211 folks</h2>
+
+            <p>Congrats, you found my personal page. I'm no web dev goblin, so this isn't going to be the pretiest website by any means. Well, maybe, who knows :D. If you're looking for something maybe related to 211, you can checkout the CS page, maybe I shared something. If you wanna see how much of a weirdo I am, the CS page is open.</p>
+        </div>
     </div>
 </body>
 </html>
